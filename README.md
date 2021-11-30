@@ -14,6 +14,7 @@
 [http://nawta.github.io](http://nawta.github.io)
 
 # Tips
+- Git Flowを一応回してる（masterとdevelopだけだが．）ので，作業するときはcheckout developとか，masterでgit pullとかをくれぐれも忘れないように．
 - moduleがないと言われたらnpm rebuildとか
 - サイト更新時はnpm, nodeをこまめにアップデートしておこう
 - git resetを使うと，差分取ってないファイル全部消えるから気をつける．
