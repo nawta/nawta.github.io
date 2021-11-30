@@ -1,4 +1,20 @@
+
+<h1 align="center">
+  ポートフォリオサイトです．lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきました．
+</h1>
+<p align="center">
+  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-emilia/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="This Portfolio: Emilia is released under the MIT license." />
+  </a>
+  <a href="https://twitter.com/intent/follow?screen_name=Cvadogsan">
+    <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@Cvadogsan" alt="Follow @Cvadogsan" />
+  </a>
+</p>
+
+[http://nawta.github.io](http://nawta.github.io)
+
 # Tips
+- Git Flowを一応回してる（masterとdevelopだけだが．）ので，作業するときはcheckout developとか，masterでgit pullとかをくれぐれも忘れないように．
 - moduleがないと言われたらnpm rebuildとか
 - サイト更新時はnpm, nodeをこまめにアップデートしておこう
 - git resetを使うと，差分取ってないファイル全部消えるから気をつける．
@@ -9,35 +25,9 @@
 - patch-packageを入れた．ので，'npx patch-package @lekoarts/gatsby-theme-emilia-core'とかnode_modules内をいじった時はパッチを作っておくように．
 - 一応実行確認したもの．npm v8.1.4, node 17.1.0
 
-<p align="center">
-  <a href="https://emilia.lekoarts.de">
-    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Starter Portfolio: Emilia
-</h1>
 
-<p align="center">
-  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-emilia/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-0BSD-blue.svg" alt="Gatsby Starter Portfolio: Emilia is released under the 0BSD license." />
-  </a>
-  <a href="https://github.com/sponsors/LekoArts">
-    <img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/LekoArts">
-  </a>
-  <a href="https://www.lekoarts.de?utm_source=emilia&utm_medium=Starter">
-    <img alt="Website" src="https://img.shields.io/badge/-website-blue">
-  </a>
-  <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
-    <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de" alt="Follow @lekoarts_de" />
-  </a>
-</p>
 
-Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Using the Gatsby Theme [`@lekoarts/gatsby-theme-emilia`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-emilia).
-
-[**Demo Website**](https://emilia.lekoarts.de)
-
-Also be sure to check out other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de) and my [Personal Website](https://www.lekoarts.de?utm_source=emilia&utm_medium=Starter).
+# Emiliaの特徴（引用）
 
 ## ✨ Features
 
