@@ -14,16 +14,16 @@
 [http://nawta.github.io](http://nawta.github.io)
 
 # Tips
-- Git Flowを一応回してる（masterとdevelopだけだが．）ので，作業するときはcheckout developとか，masterでgit pullとかをくれぐれも忘れないように．
-- moduleがないと言われたらnpm rebuildとか
-- サイト更新時はnpm, nodeをこまめにアップデートしておこう
+- Git Flowを一応回してる（masterとdevelopだけだが．）ので，作業するときはcheckout developとか，masterでgit pullとかをくれぐれも忘れないように．後，CI回しすぎるとThis Check was Cancelledとなって10分くらい待つ羽目になるので注意．
+- moduleがないと言われたらnpm rebuildとか．
+- サイト更新時はnpm, nodeをこまめにアップデートしておこう．
 - git resetを使うと，差分取ってないファイル全部消えるから気をつける．
-- content/projects：ここのディレクトリが記事になる．coverはnon-nullableなので何かしら画像用意せなあかん
-- ホットリロードしつつデバッグする時はnpm run develop or gatsby develop
+- content/projects：ここのディレクトリが記事になる．coverはnon-nullableなので何かしら画像用意せなあかん．
+- ホットリロードしつつデバッグする時はnpm run develop or gatsby develop．
 - gatsby buildしたらいい感じに反映されるっぽい？
-- 反映されんかったらブラウザのキャッシュとか消してみる
+- 反映されんかったらブラウザのキャッシュとか消してみる．
 - patch-packageを入れた．ので，'npx patch-package @lekoarts/gatsby-theme-emilia-core'とかnode_modules内をいじった時はパッチを作っておくように．
-- 一応実行確認したもの．npm v8.1.4, node 17.1.0
+- 一応実行確認したもの．npm v8.1.4, node v17.1.0, nodebrew v1.1.0. condaのnpmは古いから，conda deactivateするのを忘れない．
 
 
 
