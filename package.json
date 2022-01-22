@@ -18,8 +18,12 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-emilia": "^3.0.0",
+<<<<<<< HEAD
     "@lekoarts/gatsby-theme-emilia-core": "^3.0.1",
     "gatsby": "^4.0.0",
+=======
+    "gatsby": "^4.4.0",
+>>>>>>> ea71cf5c056e237ceded1683e07f78132adb06a7
     "gatsby-plugin-gatsby-cloud": "^4.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
     "gatsby-plugin-sitemap": "^5.0.0",
