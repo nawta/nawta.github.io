@@ -11,9 +11,9 @@ module.exports = {
     siteTitleAlt: `Naoto Nishida | 西田 直人`,
     siteHeadline: `Naoto Nishida's portfolio site`,
     siteUrl: `https://nawta.github.io`,
-    siteDescription: `@lekoarts/gatsby-theme-emiliaから原型を取ってきたポートフォリオサイト`,
+    siteDescription: `Naoto Nishida's Portfolio Page`,
     siteLanguage: `en`,
-    siteImage: `/wanko_banner.jpg`,
+    siteImage: `/alpaca_banner.jpg`,
     author: `Naoto Nishida`,
   },
   plugins: [
