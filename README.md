@@ -24,7 +24,9 @@
 - 反映されんかったらブラウザのキャッシュとか消してみる．
 - patch-packageを入れた．ので，'npx patch-package @lekoarts/gatsby-theme-emilia-core'とかnode_modules内をいじった時はパッチを作っておくように．
 - 一応実行確認したもの．npm v8.1.4, node v17.1.0, nodebrew v1.1.0. condaのnpmは古いから，conda deactivateするのを忘れない．
-
+- 久しぶりにいじる時!!!!!!
+  - upstream(LekoArtsリポの方)でpackageとか更新されてるはず．
+  - upstreamからmasterにマージ，その後developにマージ．その後，npm installしてdependenciesを最新のに更新しとく．
 
 
 # Emiliaの特徴（引用）
