@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  ポートフォリオサイトです．lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきました．
+  ポートフォリオサイトです．
 </h1>
 <p align="center">
   <a href="https://github.com/LekoArts/gatsby-starter-portfolio-emilia/blob/master/LICENSE">
@@ -11,7 +11,9 @@
   </a>
 </p>
 
-[http://nawta.github.io](http://nawta.github.io)
+[http://nawta.github.io](http://nawta.github.io)  
+  
+lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきました．
 
 # Tips
 - Git Flowを一応回してる（masterとdevelopだけだが．）ので，作業するときはcheckout developとか，masterでgit pullとかをくれぐれも忘れないように．後，CI回しすぎるとThis Check was Cancelledとなって10分くらい待つ羽目になるので注意．
