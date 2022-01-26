@@ -1,7 +1,6 @@
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store
 new file mode 100644
-index 0000000..58dace1
-Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
 index bd4ab81..75790f1 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
@@ -29,7 +28,7 @@ index bd4ab81..75790f1 100755
        projectsPath: options.projectsPath,
      },
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
-index f9e42e7..4e99ac4 100755
+index f9e42e7..3b5c2f0 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
 @@ -149,11 +149,13 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
@@ -46,7 +45,7 @@ index f9e42e7..4e99ac4 100755
 +      { title: `GitHub`, href: `https://github.com/nawta` },
 +      { title: `Twitter`, href: `https://twitter.com/cvadogsan` },
 +      { title: `Instagram`, href:`https://www.instagram.com/nawtaaa/` },
-+      { title: `CV`, href:`https://drive.google.com/file/d/11uhgW46uzwfuvfdexmwH4e-mvdS_UBec/view?usp=sharing` },
++      { title: `CV`, href:`https://drive.google.com/file/d/1N6G3iBiAMTbzCHQg2jKHWKBHp70PWHFQ/view?usp=sharing` },
      ],
      showThemeAuthor = true,
      assetsPath = `content/assets`,
