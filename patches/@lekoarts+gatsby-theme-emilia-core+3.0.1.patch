@@ -28,7 +28,7 @@ index bd4ab81..75790f1 100755
        projectsPath: options.projectsPath,
      },
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
-index f9e42e7..52988b2 100755
+index f9e42e7..8020045 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
 @@ -149,11 +149,14 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
@@ -45,7 +45,7 @@ index f9e42e7..52988b2 100755
 +      { title: `Blog`, href: `https://nawta.hatenadiary.com/` },
 +      { title: `GitHub`, href: `https://github.com/nawta` },
 +      { title: `Twitter`, href: `https://twitter.com/cvadogsan` },
-+      { title: `Instagram`, href:`https://www.instagram.com/nawtaaa/` },
++      { title: `Instagram`, href:`https://www.instagram.com/nawta.rb/` },
 +      { title: `CV`, href:`https://drive.google.com/file/d/1N6G3iBiAMTbzCHQg2jKHWKBHp70PWHFQ/view?usp=sharing` },
      ],
      showThemeAuthor = true,
