@@ -1,19 +1,15 @@
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store
 new file mode 100644
-index 0000000..9a874b5
-Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store
 new file mode 100644
-index 0000000..c73617a
-Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/.DS_Store
 new file mode 100644
-index 0000000..b1f02aa
-Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/gatsby-theme-emilia-core/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/gatsby-theme-emilia-core/.DS_Store
 new file mode 100644
-index 0000000..7ceb314
-Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/gatsby-theme-emilia-core/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/assets/bg-pattern.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/assets/bg-pattern.tsx
 index 86d93d8..67e9d20 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia/src/assets/bg-pattern.tsx
@@ -60,7 +56,7 @@ index 86d93d8..67e9d20 100755
    </svg>
  )
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx
-index 5c2af52..b663abc 100755
+index 66d701e..a2d149a 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx
 @@ -53,46 +53,6 @@ const Footer = () => {

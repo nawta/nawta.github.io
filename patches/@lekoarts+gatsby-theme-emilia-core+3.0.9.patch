@@ -53,5 +53,4 @@ index f9e42e7..f3c8f5c 100755
      assetsPath = `content/assets`,
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store
 new file mode 100644
-index 0000000..4138c7c
-Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store differ
+index 0000000..e69de29
