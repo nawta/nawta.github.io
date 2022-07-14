@@ -36,7 +36,6 @@ jobs:
             ${{ runner.os }}-node-${{ env.cache-name }}-
       - run: npm cache clean --force
       - run: npm install --legacy-peer-deps --force 
-      - run: npm ci --force
       - run: npm run build
 
       - name: Deploy
