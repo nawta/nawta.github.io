@@ -29,6 +29,8 @@ lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきまし�
 - 久しぶりにいじる時!!!!!!
   - upstream(LekoArtsリポの方)でpackageとか更新されてるはず．
   - upstreamからmasterにマージ，その後developにマージ．その後，npm installしてdependenciesを最新のに更新しとく．
+-  ModuleNotFoundError: Module not found: Error: Can't resolve 'theme-ui' in '/path/path/path'みたいなのが起こったとき
+  - Package.jsonにとりあえず書き足す（"theme-ui": "^0.11.3"的な）
 
 
 # Emiliaの特徴（引用）
