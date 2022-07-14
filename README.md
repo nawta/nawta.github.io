@@ -31,6 +31,7 @@ lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきまし�
   - upstreamからmasterにマージ，その後developにマージ．その後，npm installしてdependenciesを最新のに更新しとく．
 -  ModuleNotFoundError: Module not found: Error: Can't resolve 'theme-ui' in '/path/path/path'みたいなのが起こったとき
   - Package.jsonにとりあえず書き足す（"theme-ui": "^0.11.3"的な）
+- node_module内の変数を変えるときはhot reloadできないので，いじる→パッチ作成ー＞node_module消す→npm install --legacy-depの流れ. gatsby developの時にpatchが当てられてnode_moduleの中が書き換えられる仕組みになっている．
 
 
 # Emiliaの特徴（引用）
