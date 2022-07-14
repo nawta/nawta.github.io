@@ -1,6 +1,6 @@
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store
 new file mode 100644
-index 0000000..9a874b5
+index 0000000..feca861
 Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store differ
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/CHANGELOG.md b/node_modules/@lekoarts/gatsby-theme-emilia/CHANGELOG.md
 index 866b163..0b2b0ce 100755
@@ -145,7 +145,7 @@ index 30ed73b..4629b9e 100755
        />
      </React.Fragment>
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/projects.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/projects.tsx
-index 87e1ae4..339110e 100755
+index 87e1ae4..c99b455 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/projects.tsx
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/projects.tsx
 @@ -72,7 +72,7 @@ const Projects = ({ projects }: Props) => {
@@ -153,7 +153,7 @@ index 87e1ae4..339110e 100755
                mt: `-8rem`,
                display: `grid`,
 -              gridTemplateColumns: [`1fr`, `repeat(auto-fill, minmax(350px, 1fr))`],
-+              gridTemplateColumns: [`0.5fr`, `repeat(auto-fill, minmax(100px, 0.5fr))`],
++              gridTemplateColumns: [`1fr`, `repeat(auto-fill, minmax(50px, 1fr))`],
                gridGap: 4,
                alignItems: `flex-start`,
              }}
