@@ -28,10 +28,10 @@ index bd4ab81..75790f1 100755
        projectsPath: options.projectsPath,
      },
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
-index f9e42e7..f3c8f5c 100755
+index beec470..12e78bb 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
-@@ -149,11 +149,15 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
+@@ -147,11 +147,15 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
  exports.sourceNodes = (
    { actions, createContentDigest },
    {
@@ -51,6 +51,3 @@ index f9e42e7..f3c8f5c 100755
      ],
      showThemeAuthor = true,
      assetsPath = `content/assets`,
-diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store
-new file mode 100644
-index 0000000..e69de29

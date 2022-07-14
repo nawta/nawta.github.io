@@ -34,7 +34,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ env.cache-name }}-
-      - run: npm ci --force
+      - run: npm install --legacy-peer-deps --force 
       - run: npm run build
 
       - name: Deploy
