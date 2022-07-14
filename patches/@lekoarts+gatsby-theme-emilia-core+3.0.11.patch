@@ -1,28 +1,6 @@
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store
 new file mode 100644
 index 0000000..e69de29
-diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/CHANGELOG.md b/node_modules/@lekoarts/gatsby-theme-emilia-core/CHANGELOG.md
-index 4e8dccb..a98bbdf 100755
---- a/node_modules/@lekoarts/gatsby-theme-emilia-core/CHANGELOG.md
-+++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/CHANGELOG.md
-@@ -1,5 +1,17 @@
- # Change Log
- 
-+## 3.0.11
-+
-+### Patch Changes
-+
-+- [#935](https://github.com/LekoArts/gatsby-themes/pull/935) [`40b93a2`](https://github.com/LekoArts/gatsby-themes/commit/40b93a28bc571d366e40286586e8d816f3675325) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update minor and patch dependencies for gatsby-theme-emilia-core
-+
-+## 3.0.10
-+
-+### Patch Changes
-+
-+- [#925](https://github.com/LekoArts/gatsby-themes/pull/925) [`bc8997a`](https://github.com/LekoArts/gatsby-themes/commit/bc8997ad78cbd37dcdcdfcd02e30ad4bb5272996) Thanks [@LekoArts](https://github.com/LekoArts)! - fix: Pass full `info` object to resolver
-+
- ## 3.0.9
- 
- ### Patch Changes
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
 index bd4ab81..75790f1 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
@@ -50,21 +28,10 @@ index bd4ab81..75790f1 100755
        projectsPath: options.projectsPath,
      },
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
-index f9e42e7..12e78bb 100755
+index beec470..12e78bb 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
-@@ -8,9 +8,7 @@ const mdxResolverPassthrough = (fieldName) => async (source, args, context, info
-     id: source.parent,
-   })
-   const resolver = type.getFields()[fieldName].resolve
--  const result = await resolver(mdxNode, args, context, {
--    fieldName,
--  })
-+  const result = await resolver(mdxNode, args, context, info)
-   return result
- }
- 
-@@ -149,11 +147,15 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
+@@ -147,11 +147,15 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
  exports.sourceNodes = (
    { actions, createContentDigest },
    {
@@ -84,6 +51,3 @@ index f9e42e7..12e78bb 100755
      ],
      showThemeAuthor = true,
      assetsPath = `content/assets`,
-diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store
-new file mode 100644
-index 0000000..e69de29
