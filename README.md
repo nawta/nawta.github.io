@@ -18,7 +18,7 @@ lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきまし�
 # Tips
 - Git Flowを一応回してる（masterとdevelopだけだが．）ので，作業するときはcheckout developとか，masterでgit pullとかをくれぐれも忘れないように．後，CI回しすぎるとThis Check was Cancelledとなって10分くらい待つ羽目になるので注意．
 - moduleがないと言われたらnpm rebuildとか．
-- サイト更新時はnpm, nodeをこまめにアップデートしておこう．
+- サイト更新時はnpm, nodeをこまめにアップデートしておこう（現在node v18）．
 - git resetを使うと，差分取ってないファイル全部消えるから気をつける．
 - content/projects：ここのディレクトリが記事になる．coverはnon-nullableなので何かしら画像用意せなあかん．
 - ホットリロードしつつデバッグする時はnpm run develop or gatsby develop．
@@ -32,6 +32,7 @@ lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきまし�
 -  ModuleNotFoundError: Module not found: Error: Can't resolve 'theme-ui' in '/path/path/path'みたいなのが起こったとき
   - Package.jsonにとりあえず書き足す（"theme-ui": "^0.11.3"的な）
 - node_module内の変数を変えるときはhot reloadできないので，いじる→パッチ作成ー＞node_module消す→npm install --legacy-depの流れ. gatsby developの時にpatchが当てられてnode_moduleの中が書き換えられる仕組みになっている．
+- node versionあげる時は→Node Sass does not yet support your current environmentエラーが出るかもなので，適宜sass-loaderをupdate.npm rebuild node-sassでOK
 
 
 # Emiliaの特徴（引用）
