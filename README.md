@@ -18,20 +18,21 @@ lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきまし�
 # Tips
 - Git Flowを一応回してる（masterとdevelopだけだが．）ので，作業するときはcheckout developとか，masterでgit pullとかをくれぐれも忘れないように．後，CI回しすぎるとThis Check was Cancelledとなって10分くらい待つ羽目になるので注意．
 - moduleがないと言われたらnpm rebuildとか．
-- サイト更新時はnpm, nodeをこまめにアップデートしておこう．
+- サイト更新時はnpm, nodeをこまめにアップデートしておこう（現在node v18）．
 - git resetを使うと，差分取ってないファイル全部消えるから気をつける．
 - content/projects：ここのディレクトリが記事になる．coverはnon-nullableなので何かしら画像用意せなあかん．
 - ホットリロードしつつデバッグする時はnpm run develop or gatsby develop．
 - gatsby buildしたらいい感じに反映されるっぽい？
 - 反映されんかったらブラウザのキャッシュとか消してみる．
 - patch-packageを入れた．ので，'npx patch-package @lekoarts/gatsby-theme-emilia-core'とかnode_modules内をいじった時はパッチを作っておくように．
-- 一応実行確認したもの．npm v8.1.4, node v17.1.0, nodebrew v1.1.0. condaのnpmは古いから，conda deactivateするのを忘れない．
+- 一応実行確認したもの．npm v9.2.0, node v18.12.1, nodebrew v1.1.0. condaのnpmは古いから，conda deactivateするのを忘れない．
 - 久しぶりにいじる時!!!!!!
   - upstream(LekoArtsリポの方)でpackageとか更新されてるはず．
   - upstreamからmasterにマージ，その後developにマージ．その後，npm installしてdependenciesを最新のに更新しとく．
 -  ModuleNotFoundError: Module not found: Error: Can't resolve 'theme-ui' in '/path/path/path'みたいなのが起こったとき
   - Package.jsonにとりあえず書き足す（"theme-ui": "^0.11.3"的な）
 - node_module内の変数を変えるときはhot reloadできないので，いじる→パッチ作成ー＞node_module消す→npm install --legacy-depの流れ. gatsby developの時にpatchが当てられてnode_moduleの中が書き換えられる仕組みになっている．
+- node versionあげる時は→Node Sass does not yet support your current environmentエラーが出るかもなので，適宜sass-loaderをupdate.npm rebuild node-sassでOK
 
 
 # Emiliaの特徴（引用）
@@ -52,19 +53,16 @@ lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきまし�
 
 ### 1. **Create a Gatsby site.**
 
-Use `git` to clone the site and navigate into it:
+Use the Gatsby CLI to clone the site and install dependencies:
 
 ```sh
-git clone https://github.com/LekoArts/gatsby-starter-portfolio-emilia project-name
-cd project-name
+npx gatsby new gatsby-starter-portfolio-emilia https://github.com/LekoArts/gatsby-starter-portfolio-emilia
 ```
 
-### 2. **Install dependencies.**
-
-If you use npm 7 or above use the `--legacy-peer-deps` flag. If you use npm 6 you can use `npm install`.
+### 2. **Navigate to your new project.**
 
 ```sh
-npm install --legacy-peer-deps
+cd gatsby-starter-portfolio-emilia
 ```
 
 ### 3. **Open the code and start customizing!**

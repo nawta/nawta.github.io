@@ -1,5 +1,19 @@
 # Change Log
 
+## 0.3.13
+
+### Patch Changes
+
+- Updated dependencies [[`02872400`](https://github.com/LekoArts/gatsby-themes/commit/0287240022c308a7d1fcc8af348ee7d21bca0dd5)]:
+  - @lekoarts/gatsby-theme-emilia@5.0.0
+
+## 0.3.12
+
+### Patch Changes
+
+- Updated dependencies [[`ee969f3`](https://github.com/LekoArts/gatsby-themes/commit/ee969f30037fa99232292014431854773735d0a0)]:
+  - @lekoarts/gatsby-theme-emilia@4.0.0
+
 ## 0.3.11
 
 ### Patch Changes

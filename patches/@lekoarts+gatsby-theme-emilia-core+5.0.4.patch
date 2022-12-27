@@ -1,11 +1,8 @@
-diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store
-new file mode 100644
-index 0000000..e69de29
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
-index bd4ab81..75790f1 100755
+index 4063a4d..6aeb859 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
-@@ -5,14 +5,14 @@ module.exports = (themeOptions) => {
+@@ -5,13 +5,13 @@ module.exports = (themeOptions) => {
  
    return {
      siteMetadata: {
@@ -14,24 +11,23 @@ index bd4ab81..75790f1 100755
 -      siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
 -      siteUrl: `https://emilia.lekoarts.de`,
 -      siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
+-      siteImage: `/banner.jpg`,
+-      author: `@lekoarts_de`,
 +      siteTitle: `Naoto Nishida`,
 +      siteTitleAlt: `Naoto Nishida | 西田 直人`,
 +      siteHeadline: `Naoto Nishida's portfolio site`,
 +      siteUrl: `https://nawta.github.io`,
 +      siteDescription: `ポートフォリオのサイトです`,
-       siteLanguage: `en`,
--      siteImage: `/banner.jpg`,
--      author: `@lekoarts_de`,
 +      siteImage: `/wanko_banner.jpg`,
 +      author: `Naoto Nishida`,
        basePath: options.basePath,
        projectsPath: options.projectsPath,
      },
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
-index beec470..12e78bb 100755
+index fdda3f3..c21d1e3 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
-@@ -147,11 +147,15 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
+@@ -134,11 +134,15 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
  exports.sourceNodes = (
    { actions, createContentDigest },
    {
@@ -42,12 +38,12 @@ index beec470..12e78bb 100755
      socialMedia = [
 -      { title: `Twitter`, href: `https://twitter.com/lekoarts_de` },
 -      { title: `Homepage`, href: `https://www.lekoarts.de?utm_source=emilia&utm_medium=Theme` },
-+      { title: `Linkedin`, href:`https://www.linkedin.com/in/naoto-nishida-b48a09172/` },
-+      { title: `GitHub`, href: `https://github.com/nawta` },
-+      { title: `Twitter`, href: `https://twitter.com/cvadogsan` },
-+      { title: `Instagram`, href:`https://www.instagram.com/nawta.rb/` },
-+      { title: `Blog`, href: `https://nawta.hatenadiary.com/` },
-+      { title: `CV`, href:`https://drive.google.com/file/d/1N6G3iBiAMTbzCHQg2jKHWKBHp70PWHFQ/view?usp=sharing` },
++       { title: `Linkedin`, href:`https://www.linkedin.com/in/naoto-nishida-b48a09172/` },
++       { title: `GitHub`, href: `https://github.com/nawta` },
++       { title: `Twitter`, href: `https://twitter.com/cvadogsan` },
++       { title: `Instagram`, href:`https://www.instagram.com/nawta.rb/` },
++       { title: `Blog`, href: `https://nawta.hatenadiary.com/` },
++       { title: `CV`, href:`https://drive.google.com/file/d/1N6G3iBiAMTbzCHQg2jKHWKBHp70PWHFQ/view?usp=sharing` },
      ],
      showThemeAuthor = true,
      assetsPath = `content/assets`,
