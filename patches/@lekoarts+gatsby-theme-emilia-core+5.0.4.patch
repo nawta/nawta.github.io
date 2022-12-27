@@ -1,0 +1,49 @@
+diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
+index 4063a4d..6aeb859 100755
+--- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
++++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.js
+@@ -5,13 +5,13 @@ module.exports = (themeOptions) => {
+ 
+   return {
+     siteMetadata: {
+-      siteTitle: `Emilia`,
+-      siteTitleAlt: `Emilia - @lekoarts/gatsby-theme-emilia-core`,
+-      siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
+-      siteUrl: `https://emilia.lekoarts.de`,
+-      siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
+-      siteImage: `/banner.jpg`,
+-      author: `@lekoarts_de`,
++      siteTitle: `Naoto Nishida`,
++      siteTitleAlt: `Naoto Nishida | 西田 直人`,
++      siteHeadline: `Naoto Nishida's portfolio site`,
++      siteUrl: `https://nawta.github.io`,
++      siteDescription: `ポートフォリオのサイトです`,
++      siteImage: `/wanko_banner.jpg`,
++      author: `Naoto Nishida`,
+       basePath: options.basePath,
+       projectsPath: options.projectsPath,
+     },
+diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
+index fdda3f3..c21d1e3 100755
+--- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
++++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.js
+@@ -134,11 +134,15 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
+ exports.sourceNodes = (
+   { actions, createContentDigest },
+   {
+-    name = `LekoArts`,
+-    location = `Germany`,
++    name = `Naoto Nishida | 西田 直人`,
++    location = `Bunkyo, Tokyo, Japan`,
+     socialMedia = [
+-      { title: `Twitter`, href: `https://twitter.com/lekoarts_de` },
+-      { title: `Homepage`, href: `https://www.lekoarts.de?utm_source=emilia&utm_medium=Theme` },
++       { title: `Linkedin`, href:`https://www.linkedin.com/in/naoto-nishida-b48a09172/` },
++       { title: `GitHub`, href: `https://github.com/nawta` },
++       { title: `Twitter`, href: `https://twitter.com/cvadogsan` },
++       { title: `Instagram`, href:`https://www.instagram.com/nawta.rb/` },
++       { title: `Blog`, href: `https://nawta.hatenadiary.com/` },
++       { title: `CV`, href:`https://drive.google.com/file/d/1N6G3iBiAMTbzCHQg2jKHWKBHp70PWHFQ/view?usp=sharing` },
+     ],
+     showThemeAuthor = true,
+     assetsPath = `content/assets`,
