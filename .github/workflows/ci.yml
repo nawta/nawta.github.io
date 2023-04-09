@@ -35,7 +35,15 @@ jobs:
       #     restore-keys: |
       #       ${{ runner.os }}-node-${{ env.cache-name }}-
 
-      - run: rm -rf node_modules
+      - run: |
+         if [ "$RUNNER_OS" == "Linux" -o "$RUNNER_OS" == "macOS" ]; then
+              rm -rf node_modules
+         elif [ "$RUNNER_OS" == "Windows" ]; then
+              rd /s /q node_modules
+         else
+              echo "$RUNNER_OS not supported"
+              exit 1
+         fi
 
       - run: npm install 
       - run: npm run build
