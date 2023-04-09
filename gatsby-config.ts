@@ -1,11 +1,9 @@
-require(`dotenv`).config()
+import type { GatsbyConfig, PluginRef } from "gatsby"
+import "dotenv/config"
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
@@ -66,14 +64,7 @@ module.exports = {
         openAnalyzer: false,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
-      },
-    },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-sass`,
-  ].filter(Boolean),
+  ].filter(Boolean) as Array<PluginRef>,
 }
+
+export default config

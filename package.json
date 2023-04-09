@@ -2,7 +2,7 @@
   "private": true,
   "name": "emilia",
   "description": "Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "author": "LekoArts",
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-emilia",
@@ -17,15 +17,16 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@lekoarts/gatsby-theme-emilia": "^5.0.0",
+    "@lekoarts/gatsby-theme-emilia": "^5.0.5",
     "@lekoarts/gatsby-theme-emilia-core": "^5.0.4",
     "@mdx-js/react": "^2.2.1",
-    "gatsby": "^5.2.0",
-    "gatsby-plugin-manifest": "^5.2.0",
+    "gatsby": "^5.5.0",
+    "gatsby-plugin-manifest": "^5.5.0",
     "gatsby-plugin-sass": "^6.3.1",
     "gatsby-plugin-sharp": "^5.3.2",
-    "gatsby-plugin-sitemap": "^6.2.0",
+    "gatsby-plugin-sitemap": "^6.5.0",
     "gatsby-plugin-theme-ui": "^0.15.4",
+    "gatsby-plugin-gatsby-cloud": "^4.18.1",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.30",
     "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-responsive-iframe": "^6.3.0",
@@ -38,7 +39,11 @@
     "theme-ui": "^0.15.4"
   },
   "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
     "cross-env": "^7.0.3",
+    "typescript": "^4.9.4",
     "patch-package": "^6.4.7",
     "sass-loader": "^12.6.0"
   }
