@@ -1,15 +1,11 @@
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store
 new file mode 100644
-index 0000000..e69de29
+index 0000000..9a874b5
+Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store differ
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store
 new file mode 100644
-index 0000000..e69de29
-diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/.DS_Store
-new file mode 100644
-index 0000000..e69de29
-diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/gatsby-theme-emilia-core/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/src/@lekoarts/gatsby-theme-emilia-core/.DS_Store
-new file mode 100644
-index 0000000..e69de29
+index 0000000..7ceb314
+Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store differ
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx
 index 56d6123..3bad814 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx
@@ -61,34 +57,6 @@ index 56d6123..3bad814 100755
      </Box>
    )
  }
-diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/header-background.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/header-background.tsx
-index 0392b1e..6e2cb65 100755
---- a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/header-background.tsx
-+++ b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/header-background.tsx
-@@ -30,9 +30,7 @@ const HeaderBackground = () => {
-           left: 0,
-           right: 0,
-           bottom: 0,
--          background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 34.99%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, ${
--            isDark ? `0.35` : `0.15`
--          }) 100%)`,
-+          background: `linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, ${isDark ? `0.35` : `0.15`}) 100%)`,
-         }}
-       />
-     </React.Fragment>
-diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/project.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/project.tsx
-index 6957a4d..c4055c0 100755
---- a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/project.tsx
-+++ b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/project.tsx
-@@ -72,7 +72,7 @@ const Project: React.FC<React.PropsWithChildren<PageProps<EmiliaProjectProps, Em
-             <GatsbyImage
-               image={image.childImageSharp.gatsbyImageData}
-               alt={image.name}
--              sx={{ mb: [4, 4, 5], boxShadow: `xl` }}
-+              sx={{ mb: [4, 4, 5], boxShadow: `xl`}}
-             />
-           </animated.div>
-         ))}
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/projects.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/projects.tsx
 index 2b583cf..8d4e022 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/projects.tsx
@@ -103,10 +71,10 @@ index 2b583cf..8d4e022 100755
                alignItems: `flex-start`,
              }}
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/seo.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/seo.tsx
-index d739513..c497c5e 100755
+index d6f186c..93c1f37 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/seo.tsx
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/seo.tsx
-@@ -47,9 +47,9 @@ const Seo = ({ title = ``, description = ``, pathname = ``, image = ``, children
+@@ -49,9 +49,9 @@ const Seo = ({ title = ``, description = ``, pathname = ``, image = ``, children
        <meta name="twitter:image:alt" content={seo.description} />
        <meta name="twitter:creator" content={author} />
        <meta name="gatsby-theme" content="@lekoarts/gatsby-theme-emilia" />

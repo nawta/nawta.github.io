@@ -27,14 +27,42 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ env.cache-name }}-
-      - run: npm install --legacy-peer-deps --force 
+      # - name: Cache dependencies
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: ~/.npm
+      #     key: ${{ runner.os }}-node-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-node-${{ env.cache-name }}-
+
+      # - run: |
+      #    if [ "$RUNNER_OS" == "Linux" -o "$RUNNER_OS" == "macOS" ]; then
+      #         rm -rf node_modules
+      #    elif [ "$RUNNER_OS" == "Windows" ]; then
+      #         rd /s /q node_modules
+      #    else
+      #         echo "$RUNNER_OS not supported"
+      #         exit 1
+      #    fi
+
+
+      - if: runner.os == 'Linux' || runner.os == 'macOS'
+        run: rm -rf node_modules
+
+      - if: runner.os == 'Windows'
+        shell: bash
+        run: rm -rf node_modules
+        # |
+        #  if [ "$RUNNER_OS" == "Linux" -o "$RUNNER_OS" == "macOS" ]; then
+        #       rm -rf node_modules
+        #  elif [ "$RUNNER_OS" == "Windows" ]; then
+        #       rd /s /q node_modules
+        #  else
+        #       echo "$RUNNER_OS not supported"
+        #       exit 1
+        #  fi
+
+      - run: npm install 
       - run: npm run build
 
       - name: Deploy
