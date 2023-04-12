@@ -33,6 +33,7 @@ lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきまし�
   - Package.jsonにとりあえず書き足す（"theme-ui": "^0.11.3"的な）
 - node_module内の変数を変えるときはhot reloadできないので，いじる→パッチ作成ー＞node_module消す→npm install --legacy-depの流れ. gatsby developの時にpatchが当てられてnode_moduleの中が書き換えられる仕組みになっている．
 - node versionあげる時は→Node Sass does not yet support your current environmentエラーが出るかもなので，適宜sass-loaderをupdate.npm rebuild node-sassでOK
+- nodeのバージョンで怒られたら`nvm use 18`
 
 
 # Emiliaの特徴（引用）
