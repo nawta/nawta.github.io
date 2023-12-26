@@ -1,7 +1,6 @@
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store
 new file mode 100644
-index 0000000..feca861
-Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.mjs b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.mjs
 index df15490..9227001 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.mjs
@@ -29,7 +28,7 @@ index df15490..9227001 100755
        projectsPath: options.projectsPath,
      },
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
-index ea1619e..e3fc626 100755
+index ea1619e..4680fd7 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
 @@ -137,11 +137,15 @@ export const onCreateNode = ({ node, actions, getNode, createNodeId, createConte
@@ -43,10 +42,10 @@ index ea1619e..e3fc626 100755
      socialMedia = [
 -      { title: `Twitter`, href: `https://twitter.com/lekoarts_de` },
 -      { title: `Homepage`, href: `https://www.lekoarts.de?utm_source=emilia&utm_medium=Theme` },
-+      { title: `Linkedin`, href: `https://www.linkedin.com/in/naoto-nishida-b48a09172/` },
++      { title: `Linkedin`, href: `https://www.linkedin.com/in/naotonishida/` },
 +      { title: `GitHub`, href: `https://github.com/nawta` },
 +      { title: `Twitter`, href: `https://twitter.com/cvadogsan` },
-+      { title: `Instagram`, href: `https://www.instagram.com/nawta.rb/` },
++      { title: `Instagram`, href: `https://www.instagram.com/nawta.ig/` },
 +      { title: `Blog`, href: `https://nawta.hatenadiary.com/` },
 +      { title: `CV`, href: `https://drive.google.com/file/d/1N6G3iBiAMTbzCHQg2jKHWKBHp70PWHFQ/view?usp=sharing` },
      ],
