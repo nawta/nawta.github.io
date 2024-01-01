@@ -1,10 +1,9 @@
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store
 new file mode 100644
-index 0000000..9a874b5
-Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/.DS_Store differ
+index 0000000..e69de29
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store
 new file mode 100644
-index 0000000..7ceb314
+index 0000000..78f7bee
 Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia/src/.DS_Store differ
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx b/node_modules/@lekoarts/gatsby-theme-emilia/src/components/footer.tsx
 index 56d6123..3bad814 100755
