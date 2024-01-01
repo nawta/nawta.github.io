@@ -17,7 +17,7 @@ const config: GatsbyConfig = {
     siteImage: `/wanko_banner.jpg`,
     author: `Naoto Nishida`,
   },
-  trailingSlash: `never`,
+  trailingSlash: `always`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
@@ -56,12 +56,13 @@ const config: GatsbyConfig = {
         ],
       },
     },
+    // You can remove this plugin if you don't need it
     shouldAnalyseBundle && {
-      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+      resolve: `gatsby-plugin-webpack-statoscope`,
       options: {
-        analyzerMode: `static`,
-        reportFilename: `_bundle.html`,
-        openAnalyzer: false,
+        saveReportTo: `${__dirname}/public/.statoscope/_bundle.html`,
+        saveStatsTo: `${__dirname}/public/.statoscope/_stats.json`,
+        open: false,
       },
     },
   ].filter(Boolean) as Array<PluginRef>,
