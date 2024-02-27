@@ -1,0 +1,17 @@
+---
+cover: "./SUMART.jpg"
+date: "2024-03-14"
+title: "SUMART"
+areas:
+  - Research
+---
+
+We propose SUMART, a method for summarizing and compressing the volume of verbose subtitle translations. 
+SUMART is designed for understanding translated captions (e.g., interlingual conversations via subtitle translation or when watching movies in foreign language audio and translated captions).
+SUMART is intended for users who want a big-picture and fast understanding of the conversation, audio, video content, and speech in a foreign language.
+During the training data collection, when a speaker makes a verbose statement, SUMART employs a large language model on-site to compress the volume of subtitles. This compressed data is then stored in a database for fine-tuning purposes. 
+Later, SUMART uses data pairs from those non-compressed ASR results and compressed translated results for fine-tuning the translation model to generate more concise translations for practical uses. 
+In practical applications, SUMART utilizes this trained model to produce concise translation results.
+Furthermore, as a practical application, we developed an application that allows conversations using subtitle translation in augmented reality spaces. 
+As a pilot study, we conducted qualitative surveys using a SUMART prototype and a survey on the summarization model for SUMART. 
+We envision the most effective use case of this system is where users need to consume a lot of information quickly (e.g., Speech, lectures, podcasts, Q&A in conferences).
