@@ -1,0 +1,21 @@
+---
+cover: "./MuZeroVAE.jpg"
+date: "2024-02-27"
+title: "MuZeroVAE"
+areas:
+  - Research
+---
+
+人工知能の分野において，計画能力を備えたエージェントの開発は長年にわたる重要な課題である．完璧なシミュレーションが可能なチェスや囲碁のような分野では，木構造ベースの計画手法が顕著な成功を収めてきた．
+しかし，実世界の問題に直面すると，環境を動かすダイナミクスはしばしば複雑で未知である．
+この課題に対応するため，以前には木構造ベースの探索と学習モデルを組み合わせた，世界モデルを活用するボードゲームAIであるMuZeroが開発された．
+このアルゴリズムは，基盤となるダイナミクスの詳細を知らなくても，挑戦的で視覚的に複雑な領域で超人的なパフォーマンスを実現する．特に，囲碁，チェス，将棋において，MuZeroはゲームのルールが提供されたAlphaZeroアルゴリズムに匹敵する性能を示した．
+本研究では，MuZeroアルゴリズムを発展させ， VAE（Variational AutoEncoder）を使用してResNetの部分を変更した「MuZero VAE」という新しいアーキテクチャを提案する．
+これによりオセロを学習する．MuzeroはRepresentationとDynamicsによる潜在空間を整合させる仕組みを持たないが，この2つの潜在空間を明示的に近づけることでPredictionの学習を安定化させる．
+また，2つの潜在空間を近づけることで潜在空間の距離が近い位置で戦略的や評価値的に近い状況を学習することが期待され，VAEで盤面を再現することができる．これにより潜在空間内を探索し，戦略的に類似した盤面を再現することによりモデルの解釈性が増加するとともに，オセロというゲームの理解の深化にも大いに寄与する可能性が高い研究である．
+
+このプロジェクトは「東京大学松尾研主催世界モデルと知能2023」最終課題において優秀プロジェクトの一つに選ばれました．
+This project was selected as one of the excellent works at the end-term project in "World Model and Intelligence 2023" Course held by Matsuo Institute.
+
+Paper Prescript: [https://drive.google.com/file/d/1ZxZ6zm2DwHUqnFqtQskJjIxW03lqxJpg/view?usp=sharing](https://drive.google.com/file/d/1ZxZ6zm2DwHUqnFqtQskJjIxW03lqxJpg/view?usp=sharing)
+Poster: [https://drive.google.com/file/d/131KIxNktSpwvC5Ta4RMRBIVFFKvPB380/view?usp=sharing](https://drive.google.com/file/d/131KIxNktSpwvC5Ta4RMRBIVFFKvPB380/view?usp=sharing)
