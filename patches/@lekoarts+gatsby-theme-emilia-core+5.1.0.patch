@@ -28,10 +28,10 @@ index df15490..9227001 100755
        projectsPath: options.projectsPath,
      },
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
-index ea1619e..4680fd7 100755
+index ea1619e..1ad7d9c 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
-@@ -137,11 +137,15 @@ export const onCreateNode = ({ node, actions, getNode, createNodeId, createConte
+@@ -137,11 +137,16 @@ export const onCreateNode = ({ node, actions, getNode, createNodeId, createConte
  export const sourceNodes = (
    { actions, createContentDigest },
    {
@@ -44,9 +44,10 @@ index ea1619e..4680fd7 100755
 -      { title: `Homepage`, href: `https://www.lekoarts.de?utm_source=emilia&utm_medium=Theme` },
 +      { title: `Linkedin`, href: `https://www.linkedin.com/in/naotonishida/` },
 +      { title: `GitHub`, href: `https://github.com/nawta` },
-+      { title: `Twitter`, href: `https://twitter.com/cvadogsan` },
++      { title: `X`, href: `https://twitter.com/cvadogsan` },
 +      { title: `Instagram`, href: `https://www.instagram.com/nawta.ig/` },
 +      { title: `Blog`, href: `https://nawta.hatenadiary.com/` },
++      { title: `researchmap`, href: `https://researchmap.jp/nawta` },
 +      { title: `CV`, href: `https://drive.google.com/file/d/1N6G3iBiAMTbzCHQg2jKHWKBHp70PWHFQ/view?usp=sharing` },
      ],
      showThemeAuthor = true,
