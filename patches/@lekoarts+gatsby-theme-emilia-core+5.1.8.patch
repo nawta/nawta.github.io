@@ -1,6 +1,7 @@
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store
 new file mode 100644
-index 0000000..e69de29
+index 0000000..9a874b5
+Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia-core/.DS_Store differ
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.mjs b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.mjs
 index df15490..9227001 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-config.mjs
@@ -28,7 +29,7 @@ index df15490..9227001 100755
        projectsPath: options.projectsPath,
      },
 diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
-index ea1619e..1ad7d9c 100755
+index 585018f..1ad7d9c 100755
 --- a/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
 +++ b/node_modules/@lekoarts/gatsby-theme-emilia-core/gatsby-node.mjs
 @@ -137,11 +137,16 @@ export const onCreateNode = ({ node, actions, getNode, createNodeId, createConte
@@ -40,7 +41,7 @@ index ea1619e..1ad7d9c 100755
 +    name = `Naoto Nishida | 西田 直人`,
 +    location = `Bunkyo, Tokyo, Japan`,
      socialMedia = [
--      { title: `Twitter`, href: `https://twitter.com/lekoarts_de` },
+-      { title: `Bluesky`, href: `https://bsky.app/profile/lekoarts.de` },
 -      { title: `Homepage`, href: `https://www.lekoarts.de?utm_source=emilia&utm_medium=Theme` },
 +      { title: `Linkedin`, href: `https://www.linkedin.com/in/naotonishida/` },
 +      { title: `GitHub`, href: `https://github.com/nawta` },
@@ -52,3 +53,7 @@ index ea1619e..1ad7d9c 100755
      ],
      showThemeAuthor = true,
      assetsPath = `content/assets`,
+diff --git a/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store b/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store
+new file mode 100644
+index 0000000..4138c7c
+Binary files /dev/null and b/node_modules/@lekoarts/gatsby-theme-emilia-core/src/.DS_Store differ
