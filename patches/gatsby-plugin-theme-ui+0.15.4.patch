@@ -1,0 +1,22 @@
+diff --git a/node_modules/gatsby-plugin-theme-ui/.DS_Store b/node_modules/gatsby-plugin-theme-ui/.DS_Store
+new file mode 100644
+index 0000000..9a874b5
+Binary files /dev/null and b/node_modules/gatsby-plugin-theme-ui/.DS_Store differ
+diff --git a/node_modules/gatsby-plugin-theme-ui/index.js b/node_modules/gatsby-plugin-theme-ui/index.js
+index c1277bc..1d34ce2 100644
+--- a/node_modules/gatsby-plugin-theme-ui/index.js
++++ b/node_modules/gatsby-plugin-theme-ui/index.js
+@@ -1 +1,12 @@
+-export { default } from './src'
++export default {
++  // もし既存の theme オブジェクトがあれば その中に追記
++  styles: {
++    ul: {
++      // listStyleType の指定を上書き
++      listStyleType: 'disc',
++      listStylePosition: 'inside', // or 'outside' お好み
++      // 必要なら margin, padding を設定
++      ml: 3,
++    },
++  },
++}
