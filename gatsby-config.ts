@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
     siteUrl: `https://nawta.github.io`,
     siteDescription: `Naoto Nishida's Portfolio Page`,
     siteLanguage: `en`,
-    siteImage: `/alpaca_banner.jpg`,
+    siteImage: `/wanko_banner.jpg`,
     author: `Naoto Nishida`,
   },
   trailingSlash: `always`,
