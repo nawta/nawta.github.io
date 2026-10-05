@@ -18,22 +18,23 @@ lekoartsさんのGatsby Starter Portfolio: Emiliaから原型取ってきまし�
 # Tips
 - Git Flowを一応回してる（masterとdevelopだけだが．）ので，作業するときはcheckout developとか，masterでgit pullとかをくれぐれも忘れないように．後，CI回しすぎるとThis Check was Cancelledとなって10分くらい待つ羽目になるので注意．
 - moduleがないと言われたらnpm rebuildとか．
-- サイト更新時はnpm, nodeをこまめにアップデートしておこう（現在node v18）．
+- Node のバージョンは `.nvmrc` で固定している（現在 22.23.3）．CI も同じファイルを読むので，上げるときは `.nvmrc` を書き換えてローカルでビルドを確認してから push する．
 - git resetを使うと，差分取ってないファイル全部消えるから気をつける．
 - content/projects：ここのディレクトリが記事になる．coverはnon-nullableなので何かしら画像用意せなあかん．
 - ホットリロードしつつデバッグする時はnpm run develop or gatsby develop．
 - gatsby buildしたらいい感じに反映されるっぽい？
 - 反映されんかったらブラウザのキャッシュとか消してみる．
 - patch-packageを入れた．ので，'npx patch-package @lekoarts/gatsby-theme-emilia-core'とかnode_modules内をいじった時はパッチを作っておくように．
-- 一応実行確認したもの．npm v9.2.0, node v18.12.1, nodebrew v1.1.0. condaのnpmは古いから，conda deactivateするのを忘れない．
+- 一応実行確認したもの（2026-10-05）．node v22.23.3 (darwin-arm64), npm v10.9.9 で `npm ci` → `npm run build`．condaのnpmは古いから，conda deactivateするのを忘れない．
+- Apple Silicon の Mac では arm64 版の Node を使う．x64 版の Node を Rosetta 経由で動かすと `gatsby build` が segfault (exit 139) で落ちる．`node -p process.arch` が `arm64` になっているか確認する．
 - 久しぶりにいじる時!!!!!!
   - upstream(LekoArtsリポの方)でpackageとか更新されてるはず．
-  - upstreamからmasterにマージ，その後developにマージ．その後，npm installしてdependenciesを最新のに更新しとく．
+  - upstreamからmasterにマージ，その後developにマージ．その後，npm installしてdependenciesを最新のに更新しとく（package-lock.json が更新される）．CI は package-lock.json どおりに入れる `npm ci` を使う．
 -  ModuleNotFoundError: Module not found: Error: Can't resolve 'theme-ui' in '/path/path/path'みたいなのが起こったとき
   - Package.jsonにとりあえず書き足す（"theme-ui": "^0.11.3"的な）
 - node_module内の変数を変えるときはhot reloadできないので，いじる→パッチ作成ー＞node_module消す→npm install --legacy-depの流れ. gatsby developの時にpatchが当てられてnode_moduleの中が書き換えられる仕組みになっている．
 - node versionあげる時は→Node Sass does not yet support your current environmentエラーが出るかもなので，適宜sass-loaderをupdate.npm rebuild node-sassでOK
-- nodeのバージョンで怒られたら`nvm use 18`
+- nodeのバージョンで怒られたら`nvm use`（`.nvmrc` のバージョンに切り替わる）
 
 
 # Emiliaの特徴（引用）
