@@ -5,69 +5,37 @@ on:
     branches:
       - master
       - develop
-    pull_request:
-     types: [opened, synchronize]
-
-env:
-  cache-version: v2
+  pull_request:
+    types: [opened, synchronize]
 
 jobs:
-  deploy:
+  build:
     strategy:
+      # Let every OS finish so one failure does not hide the others.
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
+      # The Node version is pinned in .nvmrc. Local builds use the same file (`nvm use`).
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version-file: .nvmrc
+          cache: npm
 
-      # - name: Cache dependencies
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: ~/.npm
-      #     key: ${{ runner.os }}-node-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-node-${{ env.cache-name }}-
-
-      # - run: |
-      #    if [ "$RUNNER_OS" == "Linux" -o "$RUNNER_OS" == "macOS" ]; then
-      #         rm -rf node_modules
-      #    elif [ "$RUNNER_OS" == "Windows" ]; then
-      #         rd /s /q node_modules
-      #    else
-      #         echo "$RUNNER_OS not supported"
-      #         exit 1
-      #    fi
-
-
-      - if: runner.os == 'Linux' || runner.os == 'macOS'
-        run: rm -rf node_modules
-
-      - if: runner.os == 'Windows'
-        shell: bash
-        run: rm -rf node_modules
-        # |
-        #  if [ "$RUNNER_OS" == "Linux" -o "$RUNNER_OS" == "macOS" ]; then
-        #       rm -rf node_modules
-        #  elif [ "$RUNNER_OS" == "Windows" ]; then
-        #       rd /s /q node_modules
-        #  else
-        #       echo "$RUNNER_OS not supported"
-        #       exit 1
-        #  fi
-
-      - run: npm install 
+      # npm ci installs exactly what package-lock.json records.
+      - run: npm ci
       - run: npm run build
 
+      # Deploy once, from the Linux build only.
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
+        uses: peaceiris/actions-gh-pages@v4
+        if: ${{ github.ref == 'refs/heads/master' && matrix.os == 'ubuntu-latest' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
